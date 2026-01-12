@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>My Works</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+      animation: fadeDown 1s ease;
+    }
+    h1 {
+      font-size: 46px;
+      color: white;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    .subtitle {
+      color: #e0e0ff;
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      position: relative;
+      padding: 45px 20px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      transition: all 0.35s ease;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+      );
+      transition: 0.6s;
+    }
+    .card:hover::before {
+      left: 100%;
+    }
+    .card:hover {
+      transform: translateY(-12px) scale(1.03);
+      box-shadow: 0 25px 40px rgba(0,0,0,0.35);
+    }
+    .week1 { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+    .week2 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+    .week3 { background: linear-gradient(135deg, #f6d365, #fda085); }
+    .week4 { background: linear-gradient(135deg, #84fab0, #8fd3f4); }
+    .week5 { background: linear-gradient(135deg, #fccb90, #d57eeb); }
+    .week6 { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .week7 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+    .week8 { background: linear-gradient(135deg, #fa709a, #fee140); }
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Works</h1>
+    <p class="subtitle">รวมผลงานทั้งหมด 8 สัปดาห์</p>
+    <div class="work-grid">
+      <a href="week1.html" class="card week1">Week 1</a>
+      <a href="week2.html" class="card week2">Week 2</a>
+      <a href="week3.html" class="card week3">Week 3</a>
+      <a href="week4.html" class="card week4">Week 4</a>
+      <a href="week5.html" class="card week5">Week 5</a>
+      <a href="week6.html" class="card week6">Week 6</a>
+      <a href="week7.html" class="card week7">Week 7</a>
+      <a href="week8.html" class="card week8">Week 8</a>
+    </div>
+  </div>
+</body>
+</html>

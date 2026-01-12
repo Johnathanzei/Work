@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 - HTML</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background: #fff;
+      max-width: 700px;
+      width: 90%;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      animation: fadeUp 0.8s ease;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 36px;
+      color: #333;
+    }
+    .preview {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .preview img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .preview img:hover {
+      transform: scale(1.03);
+    }
+    h3 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .btn {
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .btn-demo {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+    }
+    .btn-demo:hover {
+      opacity: 0.9;
+      transform: translateY(-3px);
+    }
+    .btn-back {
+      background: #f1f1f1;
+      color: #333;
+    }
+    .btn-back:hover {
+      background: #e0e0e0;
+      transform: translateY(-3px);
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Week 2 : HTML</h1>
+    <div class="preview">
+      <img src="image/02.png" alt="Week 2 Preview">
+    </div>
+    <h3>ผลลัพธ์</h3>
+    <div class="links">
+      <a 
+        href="https://play.tailwindcss.com/M4qQZLZcBS" 
+        target="_blank" 
+        class="btn btn-demo">
+        🔗 ดูผลงาน
+      </a>
+      <a href="work.html" class="btn btn-back">
+        ⬅ Back to Work
+      </a>
+    </div>
+  </div>
+</body>
+</html>

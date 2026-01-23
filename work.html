@@ -2,114 +2,149 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Works</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
-    body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #667eea, #764ba2);
+    body{
+      min-height:100vh;
+      background:linear-gradient(135deg,#667eea,#764ba2);
     }
-    .container {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 20px;
-      text-align: center;
-      animation: fadeDown 1s ease;
+    .container{
+      max-width:1000px;
+      margin:60px auto;
+      padding:20px;
+      text-align:center;
+      animation:fadeDown 1s ease;
     }
-    h1 {
-      font-size: 46px;
-      color: white;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
+    h1{
+      font-size:46px;
+      color:white;
+      margin-bottom:10px;
+      letter-spacing:2px;
     }
-    .subtitle {
-      color: #e0e0ff;
-      margin-bottom: 50px;
-      font-size: 18px;
+    .subtitle{
+      color:#e0e0ff;
+      margin-bottom:50px;
+      font-size:18px;
     }
-    .work-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 25px;
+    .work-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
     }
-    .card {
-      position: relative;
-      padding: 45px 20px;
-      border-radius: 18px;
-      text-decoration: none;
-      font-size: 22px;
-      font-weight: bold;
-      color: white;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-      transition: all 0.35s ease;
-      overflow: hidden;
+    .card{
+      position:relative;
+      padding:45px 20px;
+      border-radius:18px;
+      text-decoration:none;
+      font-size:22px;
+      font-weight:bold;
+      color:white;
+      box-shadow:0 15px 30px rgba(0,0,0,0.2);
+      transition:all 0.35s ease;
+      overflow:hidden;
     }
-    .card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
+    .card::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:-100%;
+      width:100%;
+      height:100%;
+      background:linear-gradient(
         120deg,
         transparent,
         rgba(255,255,255,0.4),
         transparent
       );
-      transition: 0.6s;
+      transition:0.6s;
     }
-    .card:hover::before {
-      left: 100%;
+    .card:hover::before{
+      left:100%;
     }
-    .card:hover {
-      transform: translateY(-12px) scale(1.03);
-      box-shadow: 0 25px 40px rgba(0,0,0,0.35);
+    .card:hover{
+      transform:translateY(-12px) scale(1.03);
+      box-shadow:0 25px 40px rgba(0,0,0,0.35);
     }
-    .week1 { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
-    .week2 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
-    .week3 { background: linear-gradient(135deg, #f6d365, #fda085); }
-    .week4 { background: linear-gradient(135deg, #84fab0, #8fd3f4); }
-    .week5 { background: linear-gradient(135deg, #fccb90, #d57eeb); }
-    .week6 { background: linear-gradient(135deg, #667eea, #764ba2); }
-    .week7 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-    .week8 { background: linear-gradient(135deg, #fa709a, #fee140); }
-    @keyframes fadeDown {
-      from {
-        opacity: 0;
-        transform: translateY(-30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .week1{background:linear-gradient(135deg,#ff9a9e,#fad0c4);}
+    .week2{background:linear-gradient(135deg,#a18cd1,#fbc2eb);}
+    .week3{background:linear-gradient(135deg,#f6d365,#fda085);}
+    .week4{background:linear-gradient(135deg,#84fab0,#8fd3f4);}
+    .week5{background:linear-gradient(135deg,#fccb90,#d57eeb);}
+    .week6{background:linear-gradient(135deg,#667eea,#764ba2);}
+    .week7{background:linear-gradient(135deg,#43e97b,#38f9d7);}
+    .week8{background:linear-gradient(135deg,#fa709a,#fee140);}
+    @keyframes fadeDown{
+      from{opacity:0;transform:translateY(-30px);}
+      to{opacity:1;transform:translateY(0);}
     }
     .github-wrapper{
-  margin-top: 60px;
-  text-align: center;
-}
-.github-btn{
-  display: inline-block;
-  padding: 14px 40px;
-  border-radius: 50px;
-  background: linear-gradient(135deg,#24292e,#000000);
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.35);
-  transition: all 0.3s ease;
-}
-.github-btn:hover{
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 25px 40px rgba(0,0,0,0.45);
-}
+      margin-top:60px;
+      text-align:center;
+    }
+    .github-btn{
+      display:inline-block;
+      padding:14px 40px;
+      border-radius:50px;
+      background:linear-gradient(135deg,#24292e,#000000);
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+      font-weight:bold;
+      letter-spacing:1px;
+      box-shadow:0 15px 30px rgba(0,0,0,0.35);
+      transition:all 0.3s ease;
+    }
+    .github-btn:hover{
+      transform:translateY(-5px) scale(1.05);
+      box-shadow:0 25px 40px rgba(0,0,0,0.45);
+    }
+    /* 📱 Mobile Responsive */
+    @media(max-width:600px){
+      .container{
+        margin:40px auto;
+        padding:15px;
+      }
+      h1{
+        font-size:30px;
+        letter-spacing:1px;
+      }
+      .subtitle{
+        font-size:16px;
+        margin-bottom:30px;
+      }
+      .work-grid{
+        gap:18px;
+      }
+      .card{
+        font-size:18px;
+        padding:30px 15px;
+        box-shadow:0 10px 20px rgba(0,0,0,0.25);
+      }
+      .card:hover{
+        transform:none;
+      }
+      .github-btn{
+        width:100%;
+        padding:14px 0;
+        font-size:16px;
+      }
+      /* 📱 Mobile */
+      @media(max-width:600px){
+        .back-btn{
+          width:100%;
+          justify-content:center;
+          padding:14px 0;
+          font-size:15px;
+        }
+      }
+    }
   </style>
 </head>
 <body>
@@ -127,10 +162,15 @@
       <a href="week8.html" class="card week8">Week 8</a>
     </div>
     <div class="github-wrapper">
-  <a href="https://github.com/Johnathanzei/Work" target="_blank" class="github-btn">
-    🌐 View on GitHub
-  </a>
-</div>
+      <a href="https://github.com/Johnathanzei/Work" target="_blank" class="github-btn">
+        🌐 View on GitHub
+      </a>
+    </div><br>
+    <div class="back-home">
+       <a href="index.html"  class="github-btn">
+        ⬅ กลับหน้า Home
+      </a>
+    </div>
   </div>
 </body>
 </html>
